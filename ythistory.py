@@ -87,6 +87,8 @@ if __name__ == '__main__':
                 ids = ids[:idx]
                 break
 
+    # put everything in reverse-chronological order
+    ids.reverse()
     print '# {}'.format(datetime.datetime.now())
     print '# Adding {} video IDs'.format(len(ids))
     print '\n'.join(ids)
